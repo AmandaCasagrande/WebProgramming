@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Tipos de entrada de formulário</title>
+	</head>
+	<body>
+		<!--<form> action="/action.page.php" method="POST">-->
+			<fieldset>
+				<legend>Informações pessoais: </legend>
+				<!--NOME-->
+					<label for="name">Nome:</label><br>
+					<input type="text" id="nome" name="nome" value=""><br><br>
+				<!--CPF-->
+					<label for="cpf">CPF:</label><br>
+					<input type="text" id="cpf" name="cpf" value=""><br><br>
+				<!--ESCOLARIDADE-->
+					<label for="esc">Escolaridade:</label><br>
+						<input type="radio" id="em" name="nivel" value="em">
+						<label for="em">Ensino Medio</label><br>
+						<input type="radio" id="es" name="nivel" value="es">
+						<label for="em">Ensino Superior</label><br>
+						<input type="radio" id="pg" name="nivel" value="pg">
+						<label for="em">Pós-Graduação</label><br><br>
+				<!--DATA-->
+					<label for="data">Data de nascimento:</label>
+						<input type="date" name="data"><br><br>
+				<!--DISPOSITIVO-->
+					<label for="disp">Você possui:</label><br>
+						<input type="checkbox" id="1" name="1" value="Laptop">
+						<label for="1">Laptop</label><br>
+						<input type="checkbox" id="2" name="2" value="Desktop">
+						<label for="2">Desktop</label><br>	
+						<input type="checkbox" id="3" name="3" value="Smartphone">
+						<label for="3">Smartphone</label><br>		
+			</fieldset><br>
+			<fieldset>
+				<legend>Dados para cadastro:</legend>
+				<!--E-MAIL-->
+					<label for="email">E-mail:</label><br>
+					<input type="text" id="email" name="email" value=""><br><br>
+				<!--SENHA-->
+					<label for="senha">Senha:</label><br>
+					<input type="password" id="senha" name=""><br>
+			</fieldset><br>
+			<!--ENVIAR-->
+				<input type="submit" onclick="alert('Formulário enviado com sucesso!')" value="Enviar">
+			<!--RESET-->
+				<input type="reset" name="">
+		<!--</form>-->
+	</body>
+</html>
