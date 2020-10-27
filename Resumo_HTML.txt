@@ -1,0 +1,66 @@
+Estrutura básica de HTML:
+
+<html>
+    <head>
+        <title>Título</title>
+    </head>
+    <body>
+    </body>
+</html>
+
+Tags HTML para criação de texto mais utilizadas são:
+
+<p> para parágrafos, ou "texto corrido"
+<h1> para títulos (tamanho máximo)
+<h2>, <h3>, <h4> e <h5> para títulos intermediários
+<h6> para títulos (tamanho mínimo)
+
+html>
+    <head>
+        <title>Título</title>
+    </head>
+    <body>
+            <h1>Título 1</h1>
+            <h2>Título 2</h2>
+            <h3>Título 3</h3>
+            <h4>Título 4</h4>
+            <h5>Título 5</h5>
+            <h6>Título 6</h6>
+            <p>Texto de parágrafo</p>
+    </body>
+</html>
+
+Tags:
+
+</br> para criar espaço entre as linhas
+<strong> ou <b> para deixar o texto em negrito
+<i> para deixar o texto em itálico
+<s> para riscar o texto
+
+<p style="color:red">Texto</p> = Define a cor do texto. Neste exemplo, ele ficará vermelho (red)
+<p style="font-family:verdana">Texto</p> = Define a fonte do texto. Neste exemplo, é usada a fonte Verdana.
+<p style="font-size:30px">Texto</p> = Aumenta o tamanho da fonte. Neste exemplo, é usado o tamanho 30
+
+» Ao usar mais de um estilo, seu código ficará da seguinte forma:
+<p style="font-size:30px;color:red;font-family:verdana">Text.</p>
+
+Criar links:
+
+Criar um link em um título:
+<a href="#"><h1>Clique aqui</h1></a>
+
+Criar um link em um texto de cor determinada:
+<a href="#"><p style="color:pink">Clique aqui</p></a>
+
+Criar um link em uma imagem:
+<a href="#"><img src="imagens/dog.jpg" width="600px"></a>
+
+Imagem:
+É representado desta forma: <img src="imagem.jpg">
+
+Nome alternativo: Representado por alt, esta funcionalidade permite que você crie um nome alternativo para sua imagem
+Exemplo: <img src="imagem.jpg" alt="Paisagem">
+
+Ajuste de tamanho: É possível ajustar o tamanho de uma imagem utilizando o style, assim como usamos no módulo anterior para ajustar um texto, porém usando os comandos width (largura) e height (altura)
+Exemplo: <img src="imagem.jpg" style="width:300px;height:300px;">
+
