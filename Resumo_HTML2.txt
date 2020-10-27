@@ -1,0 +1,102 @@
+Uma tag <table>, ou "tabela", define uma tabela HTML.
+Cada linha de tabela é identificada com uma tag <tr>, ou "table row" (linha de tabela).
+Cada cabeçalho de tabela é identificada com uma tag <th>, ou "table header" (cabeçalho de tabela).
+Cada célula é identificada com uma tag <td>, ou "table data" (dado de tabela).
+
+Atributos do Formulário:
+
+1) Name: Cada campo de entrada (por onde usuários enviam suas informações) deve ter um atributo name (ou nome)
+para poder ser submetido - senão, não serão enviados.
+
+Exemplo:
+<form action="/action_page.php">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" value="Heidi"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+2) Action: O atributo action define a ação a ser tomada quando o formulário é enviado.
+Geralmente os dados do formulário são enviados a uma página no servidor.
+
+Exemplo:
+<form action="/action_page.php">
+
+3) Target: O atributo target, ou alvo, permite que o resultado da submissão seja aberto em uma nova aba na mesma janela.
+
+Não é necessário inserí-lo se você quiser que os resultados saiam na mesma aba. O valor padrão de target é "_self".
+Para que os resultados abram em outra aba, use "_blank".
+ 
+Exemplo: 
+<form action="/action_page.php" target="_blank">
+
+4) Method: O atributo <method>, ou método, especifica o método HTTP (GET ou POST) a ser usado quando os dados do formulário são submetidos.
+
+O método padrão HTTP para submissão de formulários é GET. Porém, quando GET é usado, os dados enviados pelo usuário
+vão ficar visíveis na barra de endereço (onde colocamos URL para acessar sites no navegador).
+
+Portanto, se você vai lidar com dados que necessitem de uma segurança extra, use POST.
+
+Exemplos: 
+<form action="/action_page.php" method="get"> 
+<form action="/action_page.php" method="post">
+
+Elementos do Formulário:
+
+1) Label: A tag <label> define um rótulo, ou seja, um texto para diversos elementos de formulário.
+Ela é muito útil para usuários que utilizem leitores de telas e que tenham dificuldade em clicar em botões.
+O atributo for da tag deve ser idêntico ao atributo id de <input> para conectá-los.
+
+2) Input: Um dos elementos mais utilizados em formulários.
+O elemento <input> pode ser apresentado de diversas formas, dependendo do atributo type. 
+Exemplo: 
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome">
+
+3) Select e Option: O elemento <select>, ou selecionar, define uma lista drop-down e o elemento <option>, ou opção, define as opções a serem selecionadas na lista:
+
+<label for="cars">Escolha um animal:</label>
+<select id="animais" name="animais">
+  <option value="cachorro">Cachorro</option>
+  <option value="gato">Gato</option>
+  <option value="coelho">Coelho</option>
+  <option value="hamster">Hamster</option>
+</select>
+
+4) TextArea: Define um campo para entrada de texto. <textarea>
+O atributo rows especifica o número de linhas e o atributo cols especifica a largura da área.
+Exemplo: 
+<textarea name="message" rows="10" cols="30">
+A menina brincava com as bonecas de sua irmã. 
+</textarea>
+
+5) Button: Define um botão clicável. No atributo "onclick", você pode escrever uma mensagem para ser mostrada após o usuário clicar no botão.
+Exemplo: <button type="button" onclick="alert ('Sua mensagem foi enviada com sucesso')">Enviar</button>
+
+6) Field e Legend: Estes elementos trabalham juntos. <fieldset>, ou conjunto de campos, é usado para agrupar dados relacionados
+em um formulário e <legend>, ou legenda, define uma legenda para o elemento <fieldset>.
+
+Exemplo:
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Sobre mim:</legend>
+    <label for="signo">Signo:</label><br>
+    <input type="text" id="signo" name="signo" value="Sagitário"><br>
+    <label for="generomusical">Gênero musical preferido:</label><br>
+    <input type="text" id="generomusical" name="generomusical" value="Rock"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+Tipos de entradas para formulários: 
+
+Exemplos:
+<input type="checkbox">  = para questões de múltipla escola para várias alternativas
+<input type="date">          = para datas
+<input type="email">        = para e-mails
+<input type="file">            = para arquivos
+<input type="password"> = para senhas
+<input type="radio">        = para questões de múltipla escolha para uma alternativa
+<input type="reset">        = para resetar os dados do formulário
+<input type="submit">      = para enviar os dados do formulário
+<input type="text">          = para envio de texto
