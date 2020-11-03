@@ -1,0 +1,77 @@
+Tipos de dados MYSQL:
+
+Numéricos: 
+→ TINYINT - número inteiro muito pequeno (tiny);
+
+→ SMALLINT - número inteiro pequeno;
+
+→ MEDIUMINT - número inteiro de tamanho médio;
+
+→ INTEGER - número inteiro de tamanho comum;
+
+→ BIGINT - número inteiro de tamanho grande;
+
+→ DECIMAL - número decimal, de ponto fixo;
+
+→ FLOAT - número de ponto flutuante de precisão simples (32 bits);
+
+→  DOUBLE - número de ponto flutuante de precisão dupla (64 bits);
+
+→  BIT - um campo de um bit.
+
+Texto/String:
+
+→ CHAR - uma cadeia de caracteres (string), de tamanho fixo e não-binária;
+
+→ VARCHAR - uma string de tamanho variável e não-binária;
+
+→ BINARY - uma string binária de tamanho fixo;
+
+→ VARBINARY - uma string binária de tamanho variável;
+
+→ TINYTEXT - uma string não-binária e de tamanho bem reduzido;
+
+→ TEXT - uma string não-binária e pequena;
+
+→ MEDIUMTEXT - uma string de tamanho comum e não-binária;
+
+→ LONGTEXT - uma string não-binária de tamanho grande;
+
+→ ENUM - de acordo com o manual do MySQL, é uma string, com um valor que precisa ser selecionado de uma lista predefinida na criação da tabela;
+char (20) / * comprimento fixo * /
+varchar (20) / * comprimento variável * /
+
+Data e hora:
+→ DATE - o valor referente a uma data no formato 'CCYY-MM-DD'. Por exemplo 1985-10-05 (ano-mês-dia). O 'CC' se refere aos dois dígitos do século (Century, em inglês);
+
+→ TIME - um valor horário no formato 'hh:mm:ss' (hora:minutos:segundos);
+
+→ TIMESTAMP - é uma sequência de caracteres ou informação codificada que identifica uma marca temporal ou um dado momento em que um evento ocorreu. No MySQL, ele tem o formato 'CCYY-MM-DD hh:mm:ss' – neste caso, seguem a padronização ISO 8601;
+
+→ YEAR - armazena um ano no formato 'CCYY' ou 'YY';
+
+DDL (Data Definition Language ou Linguagem de Definição de Dados).
+O DDL é usado para criar , alterar e deletar objetos do SQL.
+
+Seus Principais comandos são:
+
+CREATE – Usado para criar algum objeto no banco de dados.
+Usa-se a instrução CREATE para definir novas entidades.
+Exemplo: utiliza-se o CREATE TABLE para adicionar uma nova tabela em um banco de dados
+
+ALTER – Usado para alterar objetos no banco.
+Usa-se a instrução ALTER para modificar a definição de entidades existentes;
+Exemplo: ALTER TABLE para adicionar uma nova coluna a uma tabela
+ALTER DATABASE para definir opções do banco de dados.
+
+DROP – Usado para apagar objetos do Banco.
+Usa-se a instrução DROP para remover entidades existentes.
+Exemplo: DROP TABLE para remover uma tabela de um banco de dados.
+
+TRUNCATE – Usado para apagar todos os registros de uma tabela.
+
+DML (Data Manipulation Language ou linguagem de manipulação de dados)
+INSERT - insere novos dados em um banco de dados
+UPDATE - atualiza os dados em um banco de dados
+DELETE - exclui dados de um banco de dados
+SELECT - extrai dados de um banco de dados

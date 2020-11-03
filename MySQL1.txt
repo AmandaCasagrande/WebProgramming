@@ -1,0 +1,18 @@
+create database instituto;
+
+use instituto;
+
+create table aluno (id integer auto_increment,
+nome varchar(100),
+dataNascimento date, 
+primary key (id));
+
+insert into aluno (nome, dataNascimento)
+values ('Amanda', '2000/10/10');
+
+insert into aluno (nome, dataNascimento)
+values ('João', '1980/10/10');
+
+select * from aluno;
+
+delete from aluno where id = 2;
